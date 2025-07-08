@@ -1,47 +1,35 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Nearest Dollar',
-    subtitle: '2015 BVP Hackathon',
-    image: '/images/projects/nearestdollar.jpg',
-    date: '2015-11-20',
+    title: 'MelCochleaGram-DeepCNN',
+    subtitle: 'MelCochleaGram-DeepCNN',
+    link: 'https://drive.google.com/file/d/1CCXPdm4mS8j8Sjy59Z8pMFjPeu5QPOUC/view?usp=drive_link',
+    image: '/images/projects/project1.png',
+    date: '2024-05-01',
     desc:
-      'Built for a social impact hackathon. '
-      + 'NearestDollar connected to your bank accounts, credit cards, '
-      + 'or debit cards and rounded up your purchases to donate the balance to '
-      + 'the charity of your choice.',
+      'Sequentially Fused Spectrogram and the DeepCNN Classifiers-based Audio Spoof Detection System. '
+      + 'This project introduces a novel approach MCG spectrogram by fusing the Mel Spectrogram and Cochleagram sequentially. '
+      + 'For the classification, three pretrained models ResNet50, ResNet50V2, and InceptionV3 have been used.',
   },
   {
-    title: 'Harvest',
-    subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
-    link: 'https://devpost.com/software/harvest',
-    image: '/images/projects/harvest.jpg',
-    date: '2015-09-20',
+    title: 'Traffic System Controller using Big Data Analytics',
+    subtitle: 'Traffic System Controller using Big Data Analytics',
+    link: 'https://drive.google.com/file/d/1vSunrVeb2cbYyI88ZqskAR6yVi7mvcUt/view?usp=drive_link',
+    image: '/images/projects/project2.jpg',
+    date: '2024-05-01',
     desc:
-      'Won ~ $7000 in prizes for an advanced, low cost monitoring solution '
-      + 'for crops. Harvest was designed to catch irrigation leaks, overwatering, '
-      + 'and nutrient deficiencies at an affordable price for the developing world.',
+      'Focused on advancement of Traffic System Controllers, contributing to safer, more efficient urban transportation systems. '
+      + 'The project implements the three layers of the Lambda Architecture- Batch layer, Serving layer, Speed layer. ',
   },
   {
-    title: 'Space Potato',
-    subtitle: 'A kickstarter funded potato powered weather balloon.',
-    link: 'http://www.spacepotato.org',
-    image: '/images/projects/spacepotato.jpg',
-    date: '2015-06-28',
-    desc:
-      'Launched a potato battery powered weather balloon with two cameras '
-      + 'and gps transponder. Resulting photos were published in a coffee table book. '
-      + 'You can email me for a copy.',
-  },
-  {
-    title: 'Cat Detector',
+    title: 'NIT Kurukshetra Website',
     subtitle: 'A convolutional neural network to classify cats! (and dogs)',
-    image: '/images/projects/catdetector.jpg',
-    date: '2015-05-15',
+    link: 'https://cloudsofsushi.github.io/nitk/',
+    image: '/images/projects/project3.jpg',
+    date: '2021-12-01',
     desc:
-      'Trained a convolutional neural network to classify between ~ 80 cats breeds. '
-      + 'Over 60,000 cats were classified before server bills made the project too expensive '
-      + 'to continue hosting.',
+      'Designed and developed a comprehensive college website featuring multiple interactive sections, '
+      + 'providing structured access to academic, administrative, and campus-related information.',
   },
 ];
 
