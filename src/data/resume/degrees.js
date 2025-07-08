@@ -1,15 +1,21 @@
 const degrees = [
   {
-    school: 'Stanford University',
-    degree: 'M.S. Computational and Mathematical Engineering',
-    link: 'https://stanford.edu',
-    year: 2016,
+    school: 'National Institute of Technology Kurukshetra',
+    degree: 'B.Tech. in Information & Technology',
+    link: 'https://nitkkr.ac.in/',
+    year: 2024,
   },
   {
-    school: 'University at Buffalo',
-    degree: 'B.S. Electrical Engineering, Computer Engineering',
-    link: 'https://buffalo.edu',
-    year: 2012,
+    school: 'Central Board of Secondary Education (CBSE)',
+    degree: '12th Grade (Intermidiate)',
+    link: 'https://www.cbse.gov.in/',
+    year: 2019,
+  },
+  {
+    school: 'Board of School Education Haryana',
+    degree: '10th Grade (High School)',
+    link: 'https://bseh.org.in',
+    year: 2017,
   },
 ];
 
