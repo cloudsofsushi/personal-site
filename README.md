@@ -57,7 +57,7 @@ I recommend keeping the project running as you go (with `npm start`) to help cor
 3. Modify the text on the homepage. This file is located at `src/pages/Index.js`.
 4. Modify the files in `src/data/resume/` next.
 5. Modify all of the other files in the `src/data/` directory.
-6. You've finished modifying >95% of the pages. Search through the rest of the files for references to `Nirmal Singh` and change values to your name.
+6. You've finished modifying >95% of the pages. Search through the rest of the files for references to `Sushmita` and change values to your name.
 7. Change or remove the favicon in `public/index.html`. [This](https://realfavicongenerator.net/) website may be helpful.
 
 ## Deploying
