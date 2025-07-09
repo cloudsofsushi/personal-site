@@ -1,80 +1,79 @@
 # Personal Website
 
-Welcome to my [personal website](https://mldangelo.com)! This is an [MIT licensed](https://github.com/mldangelo/personal-site/blob/main/LICENSE) React-based Jamstack application. It offers a simple interface, easy modifications, static export capabilities, and free automatic deployments via [GitHub Pages](https://pages.github.com/).
+See: [https://cloudsofsushi.github.io/personal-site](https://cloudsofsushi.github.io/personal-site).
 
-## 🚀 Features
+My personal website. An [MIT](https://github.com/cloudsofsushi/personal-site/blob/main/LICENSE) licensed, simple, easily modifiable, statically-exportable [React](https://reactjs.org/), [Jamstack](https://jamstack.org/) application that deploys automatically for free using [github pages](https://pages.github.com/). Built using modern javascript, based on [create-react-app](https://github.com/facebook/create-react-app) with [React-Router](https://reactrouter.com/), SCSS, [github actions](https://github.com/features/actions), and many other useful technologies.
 
-- Built with modern JavaScript, using tools and frameworks like [create-react-app](https://github.com/facebook/create-react-app), [React-Router](https://reactrouter.com/), and SCSS.
-- Automated workflows via [GitHub Actions](https://github.com/features/actions).
-- And more!
+## Set up
 
-## 🛠 Adapting this Project
+To download the repository and install dependencies, run the following commands:
 
-Want to create your own personal website based on this project? You can set it up in as little as 30 minutes! Follow the setup instructions below and check out the **[detailed guide and checklist](./docs/adapting-guide.md)** on adapting this project to your needs. If you encounter any challenges, don't hesitate to contact me through an issue or email at [help@mldangelo.com](mailto:help@mldangelo.com).
+```bash
+git clone https://github.com/cloudsofsushi/personal-site.git # replace [cloudsofsushi] with your github username if you fork first.
+cd personal-site
+nvm install # this is optional - make sure you're running >= node 12 with `node --version`
+npm install
+```
 
-## 🤝 Contributing
+## Running
 
-Your contributions are warmly welcomed! If you wish to contribute, please review the [design goals](./docs/design-goals.md), [roadmap](./docs/roadmap.md), and [contributing guidelines](./docs/contributing.md). For any bugs or suggestions, you can reach out via email, submit a pull request (I'd be happy to get you a coffee as a thank-you!), or open an issue.
+Run the following command to build the react application and serve it with fast refresh:
 
-## 🔧 Dependencies
+```bash
+npm start
+```
 
-Ensure you have [node](https://nodejs.org/) >= v16. Optionally, use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) to manage node versions.
+Your web browser should automatically open to `<ip>:<port>:<path>` default: [http://localhost:3000/](http://localhost:3000/).
 
-## 🚀 Setup and Running
+## Adapting this Website
 
-1. Clone the repository:
+This website has been created in such a way that one doesn't encounter any trouble adapting this website. But there are still bugs. I am sorry. So if you find a bug, please email me (sushmita7988@gmail.com), submit a pull request (I'll buy you a coffee as a thank you), or submit an issue.
 
-   ```bash
-   git clone git://github.com/mldangelo/personal-site.git
-   cd personal-site
-   ```
+You may wish to fork this repository or remove my remote origin and add your own. Go [here](https://help.github.com/articles/changing-a-remote-s-url/) for more information on how to change remotes.
 
-2. (Optional) Ensure you're on Node v16 or higher:
+## Before you start
 
-   ```bash
-   nvm install
-   node --version
-   ```
+1. Make sure you have a good text editor. I recommend [Visual Studio Code](https://code.visualstudio.com/).
+2. Review `src/App.js`. This file contains all of our route definitions. If you wish to add or remove a page, you should do so here.
 
-3. Install dependencies:
+## Setup
 
-   ```bash
-   npm install
-   ```
+1. Run the project before making any modifications by following mentioned steps in the begining.
+2. Change `homepage` in `package.json` to reflect where you plan to host the site. This is important for static exporting via react-snap. This also changes your path when developing locally. For example, a homepage of `personal-site` places the site at `localhost:3000` and a homepage of `https://cloudsofsushi.github.io/personal-site/` places the site at `localhost:3000/personal-site/`. If you plan to host at on a path such as `https://[your-github-username].github.io/[your-repo-name]`, you should set this now so that your development environment mirrors your production environment.
+3. Create a `.env` file. To do this, run:
 
-4. Start the application:
+    ```bash
+    cp sample.env .env
+    ```
 
-   ```bash
-   npm start
-   ```
+    and set values as appropriate. Most people will not need to modify this file.
 
-By default, the application should be available at [http://localhost:3000/](http://localhost:3000/).
+## Adapt Content
 
-## 🚢 Deploying
+I recommend keeping the project running as you go (with `npm start`) to help correct mistakes quickly.
 
-### Deploying to GitHub Pages
+1. Start by changing text in the sidebar. This file is located at `src/components/Template/SideBar.js`.
+2. Add an image of yourself in `public/images/me.jpg`. Your image should be approximately 256 x 256 pixels. Larger and smaller is ok, but avoid very large images to save bandwidth. If you need help resizing your image, Adobe makes a great online tool [here](https://www.adobe.com/photoshop/online/resize-image.html).
+3. Modify the text on the homepage. This file is located at `src/pages/Index.js`.
+4. Modify the files in `src/data/resume/` next.
+5. Modify all of the other files in the `src/data/` directory.
+6. You've finished modifying >95% of the pages. Search through the rest of the files for references to `Nirmal Singh` and change values to your name.
+7. Change or remove the favicon in `public/index.html`. [This](https://realfavicongenerator.net/) website may be helpful.
 
-1. Update the environment variables and Git remote URL in [`.github/workflows/github-pages.yml`](.github/workflows/github-pages.yml).
-2. Adjust the `homepage` value in `package.json` based on your hosting preferences.
-3. Planning on using a custom domain? Update `public/CNAME`. Otherwise, remove it.
+## Deploying
 
-After making a commit to `main`, simply push your changes, and the deployment will be handled automatically.
+### Deploying to Github Pages
+
+1. Modify the environmental variables and git remote url in [`.github/workflows/github-pages.yml`](.github/workflows/github-pages.yml).
+2. Modify `homepage` in `package.json` to point to where you plan to host your site. If you do not plan on using a custom domain name, it should look like `https://[your-gh-username].github.io/[repository-name - default:personal-site]/`
+3. If you plan on using a custom domain, modify `public/CNAME`. If you don't, delete `public/CNAME`.
+
+Make a commit to `main` and push your changes. That's it.
 
 ### Static Export
 
-For a static export without deploying to GitHub Pages:
+To statically export the site without deploying to github pages, delete or disable `.github/workflows/github-pages.yml` and run `npm run predeploy`. This generates a static export of the website as `personal-site/build/`. Copy this and self-host or deploy to a CDN.
 
-- Remove or disable `.github/workflows/github-pages.yml`.
-- Execute:
+## Acknowledgements
 
-  ```bash
-  npm run predeploy
-  ```
-
-This will generate a static version in `personal-site/build/` which you can host or deploy to a CDN.
-
-## 🙌 Acknowledgements
-
-- Initial template from [Future Imperfect](https://html5up.net/future-imperfect) by [@ajlkn](https://github.com/ajlkn) for [HTML5 UP](html5up.net).
-- Special thanks to [@typpo](https://github.com/typpo) for tirelessly answering all of my node.js and react questions.
-- Kudos to [@notrueblood](https://github.com/notrueblood)[<sup>[1]</sup>](https://github.com/mldangelo/personal-site/pull/218) and [@sjhsieh](https://github.com/sjhsieh)[<sup>[2]</sup>](https://github.com/mldangelo/personal-site/issues/168) for their constructive feedback.
+This project is a major derivative of Michael d'Angelo work [personal-site](https://github.com/cloudsofsushi/personal-site). You should check it out.
