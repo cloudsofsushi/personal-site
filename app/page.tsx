@@ -1,6 +1,6 @@
+import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
