@@ -40,7 +40,8 @@ export default function HomePage() {
           <ul className="actions">
             <li>
               <a href="/sushmita-CV.pdf" className="button" download>
-                Download CV <FontAwesomeIcon icon={faDownload} />
+                Download CV{' '}
+                <FontAwesomeIcon icon={faDownload} />
               </a>
             </li>
           </ul>
