@@ -1,4 +1,4 @@
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -40,7 +40,7 @@ export default function HomePage() {
           <ul className="actions">
             <li>
               <a href="sushmita-CV.pdf" className="button" download>
-                Download CV <FontAwesomeIcon icon={faGithub} />
+                Download CV <FontAwesomeIcon icon={faDownload} />
               </a>
             </li>
           </ul>
