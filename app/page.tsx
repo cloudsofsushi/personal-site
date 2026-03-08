@@ -1,5 +1,6 @@
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
@@ -40,7 +41,7 @@ export default function HomePage() {
           <ul className="actions">
             <li>
               <a href="/sushmita-CV.pdf" className="button" download>
-                Download CV <FontAwesomeIcon icon={faDownload as any} />
+                Download CV <FontAwesomeIcon icon={faDownload as IconProp} />
               </a>
             </li>
           </ul>
