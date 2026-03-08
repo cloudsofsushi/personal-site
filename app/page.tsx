@@ -39,8 +39,8 @@ export default function HomePage() {
         <section className="blurb">
           <ul className="actions">
             <li>
-              <a href="sushmita-CV.pdf" className="button" download>
-                Download CV <FontAwesomeIcon icon={faDownload} />
+              <a href="/sushmita-CV.pdf" className="button" download>
+                Download CV <FontAwesomeIcon icon={faDownload as any} />
               </a>
             </li>
           </ul>
